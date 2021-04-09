@@ -1,0 +1,128 @@
+
+/*******/
+/* MAP */
+/*******/
+
+#gameMap{
+    width: auto; 
+    margin: 10px auto;
+    min-width: 510px;
+    min-height: 510px;
+    max-width: 510px;
+    max-height: 510px;
+  }
+  #wallpaper {
+    background-image: url("../img/naruto_sasuke.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+  }
+  .boxesRow{
+    display: flex;
+    width: 100%;
+    width: auto; 
+    text-align: center;
+    margin: auto;
+  }
+  .player-panel {
+    max-width: 200px;
+    padding: 10px;
+    text-align: center;
+  }
+  #Player-1-panel {
+    background-color: orange;
+  }
+  #Player-2-panel {
+    background-color: purple;
+  }
+  #celebration-img {
+    margin: auto;
+    width: 60%;
+  }
+  .box{
+    width: 51px;
+    height: 51px; 
+    padding: 3px;
+    background-color: #9F614A;
+    background-position: center; 
+    background-repeat: no-repeat;
+    border: solid .5px grey;
+  }
+  .Wall{
+    background-image: url("../img/rock.png");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: 31px 41px;
+    background-color: #749C18;
+  }
+  .rasengan{
+    background-image: url("../img/rasengan.png");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-color: rgba(0, 255, 255, 0.521);
+  }
+  .katana{
+    background-image: url("../img/katana.png");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: 21px 41px;
+    background-color: rgba(0, 255, 255, 0.521);
+  }
+  .shuriken{
+    background-image: url("../img/shuriken.png");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-color: rgba(0, 255, 255, 0.521);
+  }
+  .fist{
+    background-image: url("../img/fist.png");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+  }
+  .kunai{
+    background-image: url("../img/kunai.png");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-color: rgba(0, 255, 255, 0.521);
+  }
+
+
+  /*******/
+  /*PANEL*/
+  /*******/
+  #game-panel {
+    text-align: center;
+  }
+  #Player-1-weapon {
+    margin:auto;
+    background-color: orange;
+    min-height: 50px;
+    max-width: 50px;
+  }
+  #Player-2-weapon {
+    margin:auto;
+    background-color: purple;
+    min-height: 50px;
+    max-width: 50px;
+  }
+  .Player-1{
+    background-image: url("../img/naruto.png");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-color: chocolate;
+  }
+  .Player-2{
+    background-image: url("../img/sasuke.png");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-color: darkmagenta;
+  }
+  .active {
+    background-color: red;
+  }

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game Js</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- VICTORY MODAL -->
+    <div id="CelebrationModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- CONTENT MODAL -->
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <img id="celebration-img" src="img/rock.png" alt="victory">
+                    <p class="lead">Le Vainqueur est "<span id="winner" class="strong"></span>"</p>
+                </div>
+                <div class="modal-footer">
+                    <button id="close" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- START NEW GAME BUTTON -->
+    <header id="game-panel" class="my-3">
+        <button id="new-game" type="button" class="btn btn-primary">Start New Game</button>
+    </header>
+
+    <div class="container">
+        <div class="row d-flex justify-content-between">            
+            <!-- NARUTO GAME PANEL (PLAYER 1) -->
+            <div id="Player-1-panel" class="col player-panel text-center">
+                <h2>Naruto</h2>
+                <p>GAME PANEL</p>
+                <button id="Player-1-attack" type="button" class="btn btn-primary btn-block disabled my-3 mx-auto"
+                    disabled="true">Attaquer</button>
+                <button id="Player-1-defend" type="button" class="btn btn-primary btn-block disabled my-3 mx-auto"
+                    disabled="true">Défendre</button>
+                <div class="weapon-panel py-3">
+                    <h4>Arme</h4>
+                    <div id="Player-1-weapon">
+                    </div>
+                    <div >
+                        <div>
+                            Puissance d'attaque
+                        </div>
+                        <div id="Player-1-damagePower">
+                            <p id=Player-1-dmg></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="score-panel py-3">
+                    <h4>Score</h4>
+                    <div class="progress">
+                        <div id="Player-1-visualScore" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                            <div id="Player-1-score"> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EMPLACEMENT DE LA MAP -->
+            <div class="col" id="wallpaper">
+                <div id="gameMap">
+                </div>
+            </div>
+            
+            <!-- SASUKE GAME PANEL (PLAYER 2) -->
+            <div id="Player-2-panel" class="col player-panel text-center">
+                <h2>Sasuke</h2>
+                <p>GAME PANEL</p>
+                <button id="Player-2-attack" type="button" class="btn btn-primary btn-block disabled my-3 mx-auto"
+                    disabled>Attaquer</button>
+                <button id="Player-2-defend" type="button" class="btn btn-primary btn-block disabled my-3 mx-auto"
+                    disabled>Défendre</button>
+                <div class="weapon-panel py-3">
+                    <h4>Arme</h4>
+                    <div id="Player-2-weapon">
+                    </div>
+                    <div>
+                        <div>
+                            Puissance d'attaque
+                        </div>
+                        <div id="Player-2-damagePower">
+                            <p id=Player-2-dmg></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="score-panel py-3">
+                    <h4>Score</h4>
+                    <div class="progress">
+                        <div id="Player-2-visualScore" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                            <div id="Player-2-score">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- JAVASCRIPT FOR GAME -->
+    <script src="js/arm.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
